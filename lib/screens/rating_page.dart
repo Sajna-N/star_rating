@@ -52,7 +52,7 @@ class RatingPageState extends State<RatingPage> {
                         const TextInputType.numberWithOptions(decimal: true),
                     inputFormatters: [
                       FilteringTextInputFormatter.allow(
-                          RegExp(r'^([1-5]?(\.\d{0,1})?)$')),
+                          RegExp(r'^([1-5]?(\.\d{0,2})?)$')),
                     ],
                     decoration: const InputDecoration(
                       labelText: 'Enter number from 1-5',
